@@ -1,0 +1,10 @@
+div {
+  width: 700px;
+  height: 400px;
+  border: 1px solid black;
+  margin: 0 auto;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+}
