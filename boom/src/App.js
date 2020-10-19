@@ -16,9 +16,13 @@ export default class App extends Component {
 	}
 	randomBoomb = () => {
 		const btnAll = document.getElementsByClassName('btn');
-		console.log(btnAll);
+		let arrBtnAll = Array.from(btnAll);
+		let randomButton = Math.floor(Math.random() * 3);
+
+
 		this.setState({
 			onBoom: this.state.onBoom === 'red' ? 'green' : 'red',
+			btn1: this.state.btn1 === arrBtnAll[randomButton]
 		})
 	}
 
