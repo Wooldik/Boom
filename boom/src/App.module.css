@@ -8,3 +8,15 @@ div {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr 1fr 1fr;
 }
+.btn1,
+.btn2,
+.btn3 {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
+}
