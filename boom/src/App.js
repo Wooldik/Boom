@@ -10,12 +10,16 @@ export default class App extends Component {
 			winBtn: null,
 			btn: 'btn',
 			onBoom: 'Ты выйграл!',
-			btn1: null,
-			btn2: null,
-			btn3: null,
+			btn1: 1,
+			btn2: 1,
+			btn3: 1,
+			onBoom1: 'green',
+			onBoom2: 'green',
+			onBoom3: 'green',
 		}
 
 	}
+
 
 	randomBoomb = () => {
 		const btnAll = document.getElementsByClassName('btn');
@@ -28,10 +32,13 @@ export default class App extends Component {
 			btn1: arrBtnAll[randomButton] === arrBtnAll[0] ? 1 : 0,
 			btn2: arrBtnAll[randomButton] === arrBtnAll[1] ? 1 : 0,
 			btn3: arrBtnAll[randomButton] === arrBtnAll[2] ? 1 : 0,
-			onBoom: this.state.btn1 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
+			onBoom1: this.state.btn1 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
+			onBoom2: this.state.btn2 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
+			onBoom3: this.state.btn3 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
 
 		})
-		console.log(this.state.winBtn);
+
+
 	}
 
 
