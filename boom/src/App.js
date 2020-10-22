@@ -34,7 +34,7 @@ export default class App extends Component {
 			btn3: arrBtnAll[randomButton] === arrBtnAll[2] ? 1 : 0,
 			onBoom1: this.state.btn1 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
 			onBoom2: this.state.btn2 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
-			onBoom3: this.state.btn3 === 'green' ? 'Ты выйграл!' : 'Ты взорвался!',
+
 
 		})
 
